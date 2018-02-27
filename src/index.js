@@ -1,8 +1,6 @@
 module.exports = function solveEquation(equation) {
   // your implementation
     
-   // var s = equation.length ; // 35    
-    
     // solveEquation('-20 * x^2 - 108797540 * x - 130011773690520')
      
     var A = equation.substring(0,equation.indexOf("*")) ; //-20, длина = 4
@@ -11,9 +9,6 @@ module.exports = function solveEquation(equation) {
     var zna = equation.substring((A.length)-1+8+(B.length)+5 , (A.length)-1+8 + (B.length)+6) ;  // -
     var C = equation.substring(((A.length)-1+8+(B.length+6))) ; // - 130011773690520        
 
-    // var A = equation.substring(0,equation.indexOf("*")) ; //-20, длина = 4
-    // var B = equation.substring(((A.length)-1+8),equation.lastIndexOf("*")) ; // - 108797540 (учитывая пробелы вели счет символов)
-    // var C = equation.substring(((A.length)-1+6)+(B.length+5) ) ; // - 130011773690520
     
     var a = Number(A);
     var b = Number(B);
