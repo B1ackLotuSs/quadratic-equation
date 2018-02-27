@@ -60,12 +60,11 @@ module.exports = function solveEquation(equation) {
         mas.push(xsecondG,xfirstG) ;
         return mas ;
     }
-    }
-    
+    } 
     if ((zna !== '-' ) && (zn !== '-' )) {
      D = (Math.pow((b),2))-(4*(a)*(c)) ; // - 108797540^2 - 4*(-20)*(- 130011773690520)
      xfirst = ((-(b)+Math.sqrt(D)))/(2*(a)) ; //  (- (- 108797540) + sqrt(D))/(2*(-20))
-     xsecond = (-(b)-Math.sqrt(D))/(2*(a)) ; // ( (- 108797540) + sqrt(D))/(2*(-20))
+     xsecond = (-(b)-Math.sqrt(D))/(2*(a)) ; 
      mas = [] ;
      xfirstG =  Math.round(xfirst) ;
      xsecondG =  Math.round(xsecond) ;
